@@ -1,16 +1,29 @@
+from turtle import Screen
 import turtle
 import time
-
 def squareSpiral(turtle, edge = 2):
+	print("speed20")
 	turtle.speed(20)
-	while edge < 1000:
-		turtle.circle(edge)
-		turtle.rt(180)
-		edge += 1	
+	size = 3
+	for x in range(400):
+		print(x)
+		turtle.forward(x)
+		turtle.rt(50)
+		turtle.pensize(size)
+		size += 1
 
-squareSpiral(turtle.Turtle(), 3)	
+
+print("black")
+# turtle.bgcolor("black")
+screen = Screen()
+screen.colormode(255)
+turtle.pencolor((164, 235, 52))
+print("white")
+t = turtle.Turtle()
+print(t)
+squareSpiral(t, 3)	
 
 
-time.sleep(5)
+# time.sleep(5)
 
 
